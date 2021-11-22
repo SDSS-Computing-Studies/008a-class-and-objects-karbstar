@@ -30,7 +30,11 @@ class dog:
         self.legs = legs
         self.tail = tail
         print("I have a new dog named " + self.name)
-        
+    
+    def showDog(self):
+        print(self.name)
+        print(self.hair)
+
     def commands(self):
         # Note that any function/method definition must include
         # self as its first parameter.  So a function that takes
@@ -76,7 +80,9 @@ def main():
     # class to a name like a variable.  Any input parameters
     # required by the constructor are included as parameters of the class
     rover = dog("Rover","male","brown","Shepherd",4)
-
+    rover.showDog()
+    
+    exit()
     while True:
         command = rover.commands()
         if command == 4:
