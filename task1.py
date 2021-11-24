@@ -41,12 +41,6 @@ class student:
         self.Grades
     def getGrades(self,lit):
         self.Courses
-    def average(self):
-        x=sum(self.Grades)
-        y=len(self.Grades)
-        print(y)
-        t=x/y
-        return t
     def getHonorRoll(self):
         g=(self.Grades)
         f=len(self.Grades)
@@ -67,6 +61,12 @@ class student:
                 return True
             else:
                 return False
+    def average(self):
+        x=sum(self.Grades)
+        y=len(self.Grades)
+        print(y)
+        t=x/y
+        return t            
     def showGrade(self,numb):
         z=self.grade[numb]
         j=self.Courses[numb]
@@ -87,6 +87,6 @@ def main():
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
 
-
+print("ghtfjhjkhbgyhujyijhyguijhyuijuhygui")
 
 main()
