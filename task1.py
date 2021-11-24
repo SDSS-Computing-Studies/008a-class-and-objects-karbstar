@@ -38,10 +38,11 @@ class student:
         print ("done")
         pass
     def getCourses(self,lst):
-        self.Grades
+        self.Courses = lst
     def getGrades(self,lit):
-        self.Courses
+        self.Grades = lit
     def getHonorRoll(self):
+        o=0
         g=(self.Grades)
         f=len(self.Grades)
         if f>5:
@@ -64,7 +65,7 @@ class student:
     def average(self):
         x=sum(self.Grades)
         y=len(self.Grades)
-        print(y)
+        print(self.Grades)
         t=x/y
         return t            
     def showGrade(self,numb):
@@ -87,6 +88,11 @@ def main():
     st2.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
 
-print("ghtfjhjkhbgyhujyijhyguijhyuijuhygui")
 
-main()
+main()  
+st1 = student("Anita Bath","91334",11)
+st1.getCourses( ["English","Math","PE","Computers","History","Biology","Japanese"] )
+st1.getGrades( [91, 94, 87, 99, 82, 100, 73])
+assert st1.name == "Anita Bath"
+assert round(st1.average(),1) == 89.4
+assert st1.getHonorRoll() == True 
