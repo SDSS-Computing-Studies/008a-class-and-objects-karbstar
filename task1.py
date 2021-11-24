@@ -39,11 +39,12 @@ class student:
         pass
     def getCourses(self,lst):
         self.Grades
-    def getGrades(self,list):
+    def getGrades(self,lit):
         self.Courses
     def average(self):
         x=sum(self.Grades)
         y=len(self.Grades)
+        print(y)
         t=x/y
         return t
     def getHonorRoll(self):
