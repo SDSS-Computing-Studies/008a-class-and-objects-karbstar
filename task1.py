@@ -71,6 +71,7 @@ class student:
     def showGrade(self,numb):
         z=self.grade[numb]
         j=self.Courses[numb]
+        print(f"your grade in{j} is {z}")
         print(f"your grade in {j} is {z}")
     def showCourses(self):
         print(self.Courses)
